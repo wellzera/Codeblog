@@ -24,8 +24,8 @@ public class BlogController {
 
 
     @RequestMapping("/")
-    public String index(){
-        return "index";
+    public ModelAndView index(){
+        return getPosts();
     }
 
     @RequestMapping(value="/posts", method=RequestMethod.GET)
